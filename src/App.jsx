@@ -1,0 +1,14 @@
+import React from 'react';
+import AttendanceDetails from './AttendanceDetails.js';
+import LectureMissed from './LecturesMissed.js';
+
+function App() {
+  return React.createElement('div', {
+    className: 'min-h-screen bg-gray-100 p-5 space-y-8'
+  },
+    React.createElement(AttendanceDetails, null),
+    React.createElement(LectureMissed, null)
+  );
+}
+
+export default App;
