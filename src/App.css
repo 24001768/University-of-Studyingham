@@ -1,14 +1,118 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* App.css - Converted to Tailwind CSS */
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6f6f6 0%, #e9ecef 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Main Layout - Tailwind equivalents */
+.main-layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  margin-top: 700px; /* Consider removing or adjusting this */
+}
+
+/* Additional sections from your original CSS */
+.results-section {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.results-header {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.year-item {
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  background: white;
+  font-weight: 500;
+  color: #495057;
+}
+
+.year-item:last-child {
+  margin-bottom: 0;
+}
+
+.academic-tools-section {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tools-header {
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tools-subheader {
+  color: #6c757d;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tool-item {
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  background: white;
+  font-weight: 500;
+  color: #495057;
+}
+
+.tool-item:last-child {
+  margin-bottom: 0;
+}
+
+.programme-table-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.programme-header {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.image-placeholder {
+  background: white;
+  border-radius: 8px;
+  padding: 60px 20px;
+  text-align: center;
+  color: #6c757d;
+  font-weight: 500;
 }
