@@ -1,4 +1,4 @@
-/* App.css - Converted to Tailwind CSS */
+
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #f6f6f6 0%, #e9ecef 100%);
@@ -6,7 +6,7 @@
   padding: 40px 20px;
 }
 
-/* Main Layout - Tailwind equivalents */
+
 .main-layout {
   display: flex;
   gap: 20px;
@@ -21,10 +21,10 @@
 
 .right-column {
   flex: 1;
-  margin-top: 700px; /* Consider removing or adjusting this */
+  margin-top: 700px;
 }
 
-/* Additional sections from your original CSS */
+
 .results-section {
   max-width: 600px;
   margin: 20px auto 0 auto;
