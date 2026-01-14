@@ -1,31 +1,37 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
-import Sidebar from "./components/sidebar";
-import Dashboard from "./Pages/Dashboard";
-import AttendancePage from "./Pages/AttendancePage";
-import ResourcesPage from "./Pages/ResourcesPage";
-
+import LibraryPortal from "./pages/Libraryportal";
+import Librarycollection from "./pages/Librarycollection";
+import Bookdetail from "./pages/Bookdetail";
+import Libraryhistory from "./pages/Libraryhistory";
+import Gateway from "./pages/Gateway";
+import Login from "./Components/gatewaycomponents/Login";
+import StudentRegistration from "./Components/gatewaycomponents/StudentRegistration";
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="flex min-h-screen bg-gray-100">
+    <div>
+      <BrowserRouter>
+        <ScrollToTop></ScrollToTop>
 
-        
-        <Sidebar />
-
-        
-        <div className="flex-1">
-          <Routes>
-            <Route path="/" element={<Navigate to="/dashboard" />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/attendance" element={<AttendancePage />} />
-            <Route path="/resources" element={<ResourcesPage />} />
-          </Routes>
-        </div>
-
-      </div>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route
+            path="/StudentRegistration"
+            element={<StudentRegistration />}
+          ></Route>
+          <Route
+            path="/TutorRegistration"
+            element={<TutorRegistration />}
+          ></Route>
+          <Route path="/gateway" element={<Gateway />}></Route>
+          <Route path="/LibraryPortal" element={<LibraryPortal />}></Route>
+          <Route path="/librarycollection"element={<Librarycollection />}></Route>
+          <Route path="/bookdetail" element={<Bookdetail />}></Route>
+          <Route path="/libraryhistory" element={<Libraryhistory />}></Route>
+          <Route path="/mentorship" element={<Mentorship />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 };
 
